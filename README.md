@@ -81,10 +81,12 @@ It maintained high accuracy and showed stable training and validation performanc
 
 ### RESULTS SUMMARY
 
-#### Model Comparison:
+The training accuracy improved consistently from **94.1%** in the first epoch to **97.5%** by epoch 20, showing smooth convergence.  
+The validation accuracy steadily increased, reaching **96.3%** by the final epoch.
 
-| Model       | Training Accuracy | Validation Accuracy | Training Time | Model Size |
-|--------------|------------------:|--------------------:|---------------|-------------|
+| Model        | Training Accuracy | Validation Accuracy | Training Time | Model Size |
+|---------------|------------------:|--------------------:|---------------|-------------|
 | **MobileNet** | 93.9%             | 93.3%               | Longer        | Smaller     |
-| **ResNet-18** | High (comparable) | High (comparable)   | Faster        | Larger      |
+| **ResNet-18** | 97.5%             | 96.3%               | Faster        | Larger      |
+
 
