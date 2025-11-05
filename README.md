@@ -1,6 +1,6 @@
 ### VIOLENCE–NONVIOLENCE DETECTION
 
-##ABOUT THE PROJECT
+## ABOUT THE PROJECT
 
 This project aims to classify video scenes as VIOLENCE or NON-VIOLENCE using Deep Learning.
 Two models were used — a pretrained MobileNet and a custom-built ResNet-18 — to detect violent actions in frames extracted from videos.
