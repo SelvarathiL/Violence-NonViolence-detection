@@ -40,12 +40,12 @@ These techniques improve generalization and help the model adapt to diverse envi
 A pretrained MobileNet model was fine-tuned for binary classification (Violence vs Non-Violence).
 MobileNet is lightweight, has fewer parameters, and provides faster inference.
 
-## Training Results:
+#### Training Results:
 Training Accuracy improved from 82.1% to 93.9% (Epoch 1 to 20)
 Validation Accuracy stabilized around 93.3%
 Loss curves showed smooth convergence without overfitting
 
-# Observation:
+##### Observation:
 MobileNet achieved excellent accuracy but required longer training time compared to ResNet-18.
 
 
@@ -53,7 +53,7 @@ MobileNet achieved excellent accuracy but required longer training time compared
 ### MODEL 2: CUSTOM RESNET-18 (BUILT FROM SCRATCH)
 ResNet-18 was implemented from scratch using TensorFlow and Keras to explore residual learning.
 
-## Architecture Details:
+#### Architecture Details:
 
 Convolutional + BatchNormalization + ReLU layers
 Residual (Identity and Convolutional) Blocks
@@ -61,7 +61,7 @@ Global Average Pooling
 Dropout (0.4)
 Dense Softmax output layer for binary classification
 
-## Training Configuration:
+#### Training Configuration:
 
 Optimizer: Adam (learning rate = 1e-4)
 Loss Function: Categorical Crossentropy
@@ -74,15 +74,17 @@ EarlyStopping – stops when validation loss stops improving
 ReduceLROnPlateau – reduces learning rate when progress stagnates
 ModelCheckpoint – saves the best model as “best_resnet_se_model.keras”
 
-## Observation:
+#### Observation:
 ResNet-18 trained faster than MobileNet but produced a larger model file.
 It maintained high accuracy and showed stable training and validation performance.
 
 
 ### RESULTS SUMMARY
 
-## Model Comparison:
+#### Model Comparison:
 
-Model | Training Accuracy | Validation Accuracy | Training Time | Model Size
-MobileNet | 93.9% | 93.3% | Longer | Smaller
-ResNet-18 | High (comparable) | High (comparable) | Faster | Larger
+| Model       | Training Accuracy | Validation Accuracy | Training Time | Model Size |
+|--------------|------------------:|--------------------:|---------------|-------------|
+| **MobileNet** | 93.9%             | 93.3%               | Longer        | Smaller     |
+| **ResNet-18** | High (comparable) | High (comparable)   | Faster        | Larger      |
+
